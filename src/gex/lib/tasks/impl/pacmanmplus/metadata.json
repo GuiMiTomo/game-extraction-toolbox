@@ -376,13 +376,32 @@
             {
                 "game": "PAC-MAN ARRANGEMENT Arcade Ver.",
                 "system": "Arcade",
-                "filename": "pacman_arrangement_arcade.zip",
-                "status": "partial",
-                "notes": [1, 5],
+                "filename": "ncv2.zip",
+                "status": "playable",
+                "notes": [5],
                 "extract": {
                     "in_file": "pacmanarrangement",
                     "start": 423008,
                     "length": 7864320
+                },
+                "zip_files": {
+                    "ncs2main0.14e": {"start": "0x00000", "length": "0x80000"},
+                    "ncs2main1.13e": {"start": "0x80000", "length": "0x80000"},
+                    "ncs1sub.1d": {"start": "0x100000", "length": "0x80000"},
+                    "ncs1voic.7c": {"start": "0x180000", "length": "0x200000"},
+                    "ncs1cg0.10e": {"start": "0x380000", "length": "0x200000"},
+                    "ncs1cg1.10f": {"start": "0x580000", "length": "0x200000"}
+                },
+                "verify": {
+                    "type": "zip",
+                    "entries": {
+                        "ncs2main0.14e": {"size": 524288, "crc": "A19C715D"},
+                        "ncs2main1.13e": {"size": 524288, "crc": "A30BD27C"},
+                        "ncs1sub.1d": {"size": 524288, "crc": "365CADBF"},
+                        "ncs1voic.7c": {"size": 2097152, "crc": "ED05FD88"},
+                        "ncs1cg0.10e": {"size": 2097152, "crc": "FDD24DBE"},
+                        "ncs1cg1.10f": {"size": 2097152, "crc": "007B19DE"}
+					}
                 }
             },
             {
@@ -403,8 +422,8 @@
             "2": "This title not ROM-based (a rebuild or a native Windows port), so no extraction is possible.",
             "3": "Along with some CRC mismatches, this game renders upside-down. MAME and RetroArchMAME have slightly different ways to fix this per game.",
             "4": "There are minor CRC mismatches, but this ROM works properly.",
-            "5": "MAME does not appear to support this Arcade title, which was originally part of Namco Classic Collection Vol. 2.",
-            "6": "This title is likely a native/DirectX port for XBox 360, and not a packagable ROM.",
+            "5": "This title works by setting the 'GAME SELECT' option to 'PACMAN ONLY' on the service menu's 'GAME OPTION' section. The rest of Namco Classic Collection Vol. 2 isn't available.",
+            "6": "This title is likely a native/DirectX port for Xbox 360, and not a packagable ROM.",
             "7": "This title appears to launch with a Bandai Namco splash and is likely a native/DirectX port.",
             "8": "These SNES titles do not appear to be raw or LZMA compressed in the DLL, and cannot yet be extracted."
         }
