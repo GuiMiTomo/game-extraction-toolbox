@@ -407,14 +407,9 @@
             {
                 "game": "PAC-MAN ARRANGEMENT Console Ver.",
                 "system": "???",
-                "filename": "pacman_arrangement_console.zip",
-                "status": "partial",
-                "notes": [1, 6],
-                "extract": {
-                    "in_file": "pacmanarrangement",
-                    "start": 423008,
-                    "length": 7864320
-                }
+                "filename": "N/A",
+                "status": "no-rom",
+                "notes": [2, 6],
             }
         ],
         "notes": {
