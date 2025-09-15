@@ -140,7 +140,7 @@ These are noted in the documentation for each script. If you think a ROM is misi
  **Namco Arcade Game Series: Ms. Pac-Man**      | 100%           | Y                |   
  **Namco Arcade Game Series: Pacman**           | 100%           | Y                |   
  **NeoGeo Classics by SNK (Humble Store)**      | 100%            | Y               | 
- **Pac Man Museum Plus**                        | 47%            | Y                | Some progress, but there are a lot of non-extractable titles.
+ **Pac Man Museum Plus**                        | 43%            | Y                | Some progress, but there are a lot of non-extractable titles.
  **Sega Genesis and Mega Drive Collection**     | 90%            | Y                | Some compressed variants not yet extracted  
  **Sega Smash Pack 1**                          | 100%           | Y                | 
  **Sega Smash Pack 2**                          | 100%           | Y                | All games except Sega Swirl!
