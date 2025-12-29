@@ -16,6 +16,14 @@ class PacManWorldRePacTask(BaseTask):
     _default_input_folder = helpers.gen_steam_app_default_folder("PAC-MAN WORLD Re-PAC")
     _input_folder_desc = "Pac Man World Re Pac install folder"
 
+    _prop_info = {
+        "include-partials": {
+            "description": "Include the partial ROMs that are missing data; useful for mixing with other sources or investigation",
+            "default": False,
+            "type": "Boolean"
+        }
+    }
+
     # This is a copy of the PMM+ method, so there might be unused code
 
     def get_out_file_info(self):
@@ -28,6 +36,15 @@ class PacManWorldRePacTask(BaseTask):
 
     def execute(self, in_dir, out_dir):
         for game in self._metadata['out']['files']:
+            if game.get('status') == "no-rom":
+                logger.info(f"Skipping {game['game']} as there is no ROM to extract...")
+                continue
+
+            is_partial = game.get('status') == "partial"
+            if not self._props.get('include-partials') and is_partial:
+                logger.info(f"Skipping {game['game']} as this tool cannot extract a working copy...")
+                continue
+
             # read the matching input file
             pkg_name = game['extract']['in_file']
             in_file_entry = self._metadata['in']['files'][pkg_name]
