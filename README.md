@@ -141,6 +141,7 @@ These are noted in the documentation for each script. If you think a ROM is misi
  **Namco Arcade Game Series: Pacman**           | 100%           | Y                |   
  **NeoGeo Classics by SNK (Humble Store)**      | 100%            | Y               | 
  **Pac Man Museum Plus**                        | 40%            | Y                | Some progress, but there are a lot of non-extractable titles.
+ **Pac Man World Re Pac**                       | 100%           | Y                | Re-uses PMM+'s emulator. Only features the original Pac-Man.
  **Sega Genesis and Mega Drive Collection**     | 90%            | Y                | Some compressed variants not yet extracted  
  **Sega Smash Pack 1**                          | 100%           | Y                | 
  **Sega Smash Pack 2**                          | 100%           | Y                | All games except Sega Swirl!
