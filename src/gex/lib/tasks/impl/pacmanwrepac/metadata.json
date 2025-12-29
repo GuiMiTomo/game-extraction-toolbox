@@ -1,0 +1,74 @@
+{
+    "in": {
+        "files": {
+            "pacman": {
+                "rel_path": ["PAC-MAN WORLD Re-PAC_Data", "Plugins", "x86_64"],
+                "filename": "GamePacman_pacmuseum2021_windows_x64_Release.dll",
+                "versions": {
+                    "Steam": {
+                        "size": 222208,
+                        "crc": "A426A2D3"
+                    }
+                }
+            }
+        }
+    },
+    "out": {
+        "files": [
+            {
+                "game": "PAC-MAN",
+                "system": "Arcade",
+                "filename": "puckman.zip",
+                "status": "playable",
+                "notes": [1],
+                "extract": {
+                    "in_file": "pacman",
+                    "start": 138496,
+                    "length": 77344
+                },
+                "zip_files": {
+                    "pm1_prg1.6e": {"start": "0x00000", "length": "0x800"},
+                    "pm1_prg2.6k": {"start": "0x00800", "length": "0x800"},
+                    "pm1_prg3.6f": {"start": "0x01000", "length": "0x800"},
+                    "pm1_prg4.6m": {"start": "0x01800", "length": "0x800"},
+                    "pm1_prg5.6h": {"start": "0x02000", "length": "0x800"},
+                    "pm1_prg6.6n": {"start": "0x02800", "length": "0x800"},
+                    "pm1_prg7.6j": {"start": "0x03000", "length": "0x800"},
+                    "pm1_prg8.6p": {"start": "0x03800", "length": "0x800"},
+                    "pm1-3.1m": {"start": "0x10000", "length": "0x100"},
+                    "pm1-1.7f": {"start": "0x10100", "length": "0x20"},
+                    "pm1-4.4a": {"start": "0x10120", "length": "0x100"},
+                    "pm1_chg1.5e": {"start": "0x10A20", "length": "0x800"},
+                    "pm1_chg2.5h": {"start": "0x11220", "length": "0x800"},
+                    "pm1_chg3.5f": {"start": "0x11A20", "length": "0x800"},
+                    "pm1_chg4.5j": {"start": "0x12220", "length": "0x800"},
+                    "pm1-2.3m": {"start": "0x12A20", "length": "0x100"}
+                },
+                "verify": {
+                    "type": "zip",
+                    "entries": {
+                        "pm1_prg1.6e": {"size": 2048, "crc": "F36E88AB"},
+                        "pm1_prg2.6k": {"size": 2048, "crc": "618BD9B3"},
+                        "pm1_prg3.6f": {"size": 2048, "crc": "7D177853"},
+                        "pm1_prg4.6m": {"size": 2048, "crc": "D3E8914C"},
+                        "pm1_prg5.6h": {"size": 2048, "crc": "6BF4F625"},
+                        "pm1_prg6.6n": {"size": 2048, "crc": "A948CE83"},
+                        "pm1_prg7.6j": {"size": 2048, "crc": "3F7EDFC4"},
+                        "pm1_prg8.6p": {"size": 2048, "crc": "E941B680"},
+                        "pm1-3.1m": {"size": 256, "crc": "A9CC86BF"},
+                        "pm1-1.7f": {"size": 32, "crc": "2FC650BD"},
+                        "pm1-4.4a": {"size": 256, "crc": "3EB3A8E4"},
+                        "pm1_chg1.5e": {"size": 2048, "crc": "425808A4"},
+                        "pm1_chg2.5h": {"size": 2048, "crc": "3591B89D"},
+                        "pm1_chg3.5f": {"size": 2048, "crc": "9E39323A"},
+                        "pm1_chg4.5j": {"size": 2048, "crc": "1B1D9096"},
+                        "pm1-2.3m": {"size": 256, "crc": "5C0ABCD1"}
+                    }
+                }
+            }
+        ],
+        "notes": {
+            "1": "There are minor CRC mismatches, but this ROM works properly."
+        }
+    }
+}
